@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Register</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #66bb6a, #43a047);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #4caf50;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      width: 300px;
+      color: white;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"],
+    .form-container input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0 12px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .form-container input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .form-container .radio-group {
+      margin-bottom: 12px;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: white;
+      color: green;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .form-container a {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+
+    .form-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Silahkan Isikan Data</h2>
+  <form action="#" method="POST">
+    <input type="text" name="first_name" placeholder="First name" required>
+    <input type="text" name="middle_name" placeholder="Middle name">
+    <input type="text" name="last_name" placeholder="Last name">
+    <input type="date" name="birth_date" placeholder="Tanggal Lahir">
+    
+    <div class="radio-group">
+      Jenis Kelamin: 
+      <label><input type="radio" name="gender" value="Pria"> Pria</label>
+      <label><input type="radio" name="gender" value="Wanita"> Wanita</label>
+    </div>
+
+    <input type="text" name="address" placeholder="Tempat Tinggal">
+    <input type="email" name="email" placeholder="Email">
+    <input type="text" name="phone" placeholder="Phone">
+    <input type="password" name="password" placeholder="Password">
+    
+    <button type="submit">REGISTER</button>
+    <a href="#">Kembali Back</a>
+  </form>
+</div>
+
+</body>
+</html>

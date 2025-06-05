@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST Bhinneka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 80px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="d:\logo st bhinneka\logo.png" alt="Logo ST Bhinneka">
+            <h1>ST Bhinneka<br><small>UNIVERSITAS SATYA TERRA BHINNEKA</small></h1>
+        </div>
+        
+        <h2>Menu Navigasi</h2>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+        </ul>
+        
+        <h2>Formulir Pengguna</h2>
+        <form>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat"></textarea><br><br>
+            
+            <label>Jenis Kelamin:</label>
+            <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+            <input type="radio" name="gender" value="Perempuan"> Perempuan<br><br>
+            
+            <label>Hobi:</label>
+            <input type="checkbox" name="hobi" value="Olahraga"> Olahraga
+            <input type="checkbox" name="hobi" value="Musik"> Musik
+            <input type="checkbox" name="hobi" value="Membaca"> Membaca<br><br>
+            
+            <label for="usia">Usia:</label>
+            <input type="number" id="usia" name="usia"><br><br>
+            
+            <label for="gambar">Pilih Gambar:</label>
+            <input type="file" id="gambar" name="gambar"><br><br>
+            
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir"><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

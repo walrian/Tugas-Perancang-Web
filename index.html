@@ -1,47 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>Hoopla Movie</title>
+  <meta charset="UTF-8">
+  <title>Perpustakaan Digital</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="banner">
-        <div class="navbar">
-            <img src="./img/img.png" alt="" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">List Movie</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </div>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search">
+    <label><input type="radio" name="filter" value="title" checked> Title</label>
+    <label><input type="radio" name="filter" value="author"> Author</label>
+    <label><input type="radio" name="filter" value="publisher"> Publisher</label>
+    <label><input type="radio" name="filter" value="titleyear"> Title & Year</label>
+    <input type="text" id="yearInput" placeholder="2018">
+  </div>
+  <div class="book-container" id="bookContainer"></div>
 
-        <div class="content">
-
-            <span class="text pertama-text">EXPLORER YOUR MOVIES</span>
-            <span class="text kedua-text" id="genre">ACTION</span>
-
-            <p>Streaming film dan acara TV tak terbatas di ponsel, tablet, laptop, dan TV-mu.</p>
-            <div>
-                <button id="registerBtn" class="signup-btn" type="button">
-                     <span class="cover"></span>REGISTER
-                </button>
-                <button id="loginBtn" class="login-btn" type="button">
-                     <span class="cover"></span>LOGIN
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>

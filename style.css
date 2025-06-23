@@ -1,144 +1,40 @@
-/* HEADER */
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Mulish", sans-serif;
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
 }
 
-.banner {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(./img/banner.jpg);
-  background-size: cover;
-  background-position: center;
+.search-container {
+  margin-bottom: 20px;
 }
 
-.navbar {
-  width: 85%;
-  margin: auto;
-  padding: 35px 0;
+input[type="text"] {
+  padding: 8px;
+  margin: 5px;
+  width: 180px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.book-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.logo {
-  width: 200px;
-  cursor: pointer;
-}
-
-.navbar ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-  position: relative;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.navbar ul li::after {
-  content: "";
-  height: 3px;
-  width: 0;
-  background: #009688;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5s;
-}
-
-.navbar ul li:hover::after {
-  width: 100%;
-}
-
-.content {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.book-card {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 180px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: #fff;
 }
 
-.content .text {
-  position: relative;
-  color: orange;
-  font-size: 70px;
-  font-weight: 600;
-}
-
-.content .text.pertama-text {
-
-  color: #FFF;
-}
-
-.text.kedua-text:before {
-  content: "";
-  position: absolute;
-  font-weight: 600;
-  top: 0;
-  left: 0;
-  animation: animate 5s steps(12) infinite;
-}
-
-.content p {
-  margin: 20px auto;
-  font-weight: 100;
-  line-height: 25px;
-}
-
-.login-btn {
-  width: 200px;
-  padding: 15px 0;
-  text-align: center;
-  margin: 20px 10px;
-  border-radius: 25px;
-  font-weight: bold;
-  border: 2px solid orange;
-  background: transparent;
-  color: white;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.signup-btn {
-  width: 200px;
-  padding: 15px 0;
-  text-align: center;
-  margin: 20px 10px;
-  border-radius: 25px;
-  font-weight: bold;
-  border: 2px solid orange;
-  background: transparent;
-  color: white;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.cover {
-  background: orange;
-  height: 100%;
-  width: 0%;
-  border-radius: 25px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: 0.5s;
-}
-
-button:hover span {
+.book-card img {
   width: 100%;
-}
-
-button:hover {
-  border: none;
+  height: 220px;
+  object-fit: cover;
 }
